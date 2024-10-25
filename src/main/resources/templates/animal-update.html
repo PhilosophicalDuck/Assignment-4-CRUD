@@ -32,7 +32,7 @@
   <form action="/animal/update" method="post">
     <input type="number" id="animalId" name="animalId"  data-th-value="${animal.animalId}" readonly/>
     <input type="text" id="name" name="name" data-th-value="${animal.name}"/>
-    <input type="text" id="animalClass" name="animalClass" data-th-value="${animal.animalClass}"/>
+    <input type="text" id="animalClass" name="class" data-th-value="${animal.animalClass}"/>
     <input type="number" id="animalDescription" name="description" step="0.01" data-th-value="${animal.description}"/>
     <button type="submit" class="btn btn-primary">Save</button>
   </form>
