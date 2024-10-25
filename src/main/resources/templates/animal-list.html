@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Animal List</title>
+</head>
+<body>
+<div class="container">
+    <h1>Animal List</h1>
+    <a href="/animal/animal/createForm">Create new animal</a>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Animal Class</th>
+        </tr>
+        <tr data-th-each="animal : ${animalList}">
+            <td><a data-th-text="${animal.animalId}"></a></td>
+            <td data-th-text="${animal.name}"></td>
+            <td data-th-text="${animal.animalClass}"></td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>

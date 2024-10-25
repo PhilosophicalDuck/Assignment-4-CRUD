@@ -70,9 +70,12 @@ public class AnimalService {
      * @param animal the new Animal details.
      */
     public void updateAnimal(int animalId, Animal animal) {
-
-        //Technically the 4 lines above are not necessary because the save method merges by default.
         Animal existing = getAnimalById(animalId);
+        existing.setName(animal.getName());
+        existing.setAnimalClass(animal.getAnimalClass());
+        existing.setHabitat(animal.getHabitat());
+        existing.setAnimalClass(animal.getAnimalClass());
+        existing.setDescription(animal.getDescription());
         animalRepository.save(existing);
     }
 

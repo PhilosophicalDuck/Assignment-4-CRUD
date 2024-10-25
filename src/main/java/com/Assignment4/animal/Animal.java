@@ -23,6 +23,7 @@ public class Animal {
     private String description;
 
     public Animal(int animalIdId, String name, String animalClass, String scientificName, String habitat, String description) {
+        this.animalId = animalId;
         this.name = name;
         this.animalClass = animalClass;
         this.scientificName = scientificName;
